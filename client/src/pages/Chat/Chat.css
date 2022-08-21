@@ -1,0 +1,136 @@
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    padding: 20px 0;
+    overflow-y: auto;
+    font-family: 'Helvetica Neue', 'Times New Roman', 'sans-serif';
+    background-color: #36393f;
+}
+
+.chat_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+.chat_header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: purple;
+    background-color: violet;
+}
+
+.chat_header #username {
+    margin-left: auto;
+}
+
+.chat_header #more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.chat_header #more svg {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat_header #dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35px;
+    right: -10px;
+    width: fit-content;
+    height: 30px;
+    padding: 3px 10px;
+    white-space: nowrap;
+    user-select: none;
+    border-radius: 5px;
+    background-color: violet;
+    cursor: pointer;
+}
+
+.chat_body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    height: fit-content;
+    padding: 5px 10px;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.chat_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    background-color: violet;
+}
+
+.chat_footer input {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Helvetica Neue', 'Times New Roman', 'sans-serif';
+    font-size: 14px;
+}
+
+.chat_footer svg {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.chat_footer svg:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Scrollbar */
+.chat_body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.chat_body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.chat_body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.chat_body::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.chat_body::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.7);
+}

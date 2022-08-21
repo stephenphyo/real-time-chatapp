@@ -1,0 +1,64 @@
+.join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    padding: 30px 0;
+    overflow-y: auto;
+    background-color: #36393f;
+}
+
+.join_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 265px;
+    padding: 30px 0;
+    gap: 20px;
+    border-radius: 15px;
+    background-color: violet;
+}
+
+.join p {
+    margin-bottom: 10px;
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+    color: purple;
+}
+
+.join input {
+    width: 250px;
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-family: 'Helvetica Neue';
+    font-size: 15px;
+}
+
+.join button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 7px 0;
+    margin-top: 10px;
+    border: 2px solid purple;
+    border-radius: 3px;
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    color: purple;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.join button:hover {
+    color: white;
+    background-color: purple;
+}
